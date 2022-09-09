@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Connect and Bind Data in Dropdown Using Django and Python</title>
+         
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+        <h1></h1>
+        <select>
+            <option disabled="True" selected>--Select Employee Name--</option>
+            {% for results in showemp %}
+                <option>{{results.ZONEGRPUNIT}}</option>
+            {% endfor %}
+        </select>
+        <script src="" async defer></script>
+    </body>
+</html>
